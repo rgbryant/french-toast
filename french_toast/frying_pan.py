@@ -7,8 +7,9 @@ class FryingPan(object):
         self.url = url
         self.find_string = find_string
 
-    def get_french_toast():
-        page = requests.get(self.url)
-        tree = etree.fromstring(page.content)
+    def get_french_toast(self):
+        content = requests.get(self.url).content.decode('utf-8')
+        tree = etree.fromstring(content)
+        status = tree.find(self.find_string)
         return status.text
 
