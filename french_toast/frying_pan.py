@@ -3,7 +3,7 @@ from lxml import etree
 
 class FryingPan(object):
 
-    def __init__(url, find_string):
+    def __init__(self, url, find_string):
         self.url = url
         self.find_string = find_string
 

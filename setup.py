@@ -15,4 +15,8 @@ setup(
         "requests>=2.18.4, <3.0",
         "lxml>=4.2.1, <5"
     ],
+    tests_require = [
+    'mock',
+    'nose',
+    ]
 )
