@@ -1,5 +1,5 @@
 pipeline {
-    agent { any }
+    agent any
     stages {
         stage ('Build Environment'){
             def environment = docker.build 'french-toast'
