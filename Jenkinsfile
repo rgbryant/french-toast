@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'ubuntu:focal'
+        }
+    }
     stages {
         stage ('Build') {
             steps {
