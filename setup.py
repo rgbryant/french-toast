@@ -6,6 +6,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='french-toast',
+    maintainer='Robert Bryant',
+    maintainer_email='none@none.com'
     version='0.1.0',
     description='Code for AWS lambda that will hook into Alexa.',
     url='https://github.com/rgbryant/french-toast',
